@@ -53,7 +53,7 @@ const ganhou=()=>{
   desenho[6]=document.getElementById('braco1').style.display='none'
   img2.style.display='block'
   audio.play()
-  setTimeout(final,4000)
+  setTimeout(final,3000)
 }
 const apagarL=()=>{
   dica.innerHTML=''
@@ -86,7 +86,8 @@ const pegarfotos=()=>{
   img1.style.display='block'
 }
 const final=()=>{
-  img2.style.display='none'  
+  img2.style.display='none'
+  audio.pause()  
   img5.style.display='block'
   audio2.play()
 }
@@ -137,7 +138,8 @@ teclas_1.map((e) => {
     }
   });
 });
-bnt.addEventListener("click", (evt) => {
+
+const init=()=>{
   jogando = true;
   acerto = 0;
   erros = 0;
@@ -145,7 +147,7 @@ bnt.addEventListener("click", (evt) => {
   quant = palavras.length;
   num = Math.floor(Math.random() * quant);
   palavraSorteada = palavras[num];
-  console.log(palavraSorteada)
+  // console.log(palavraSorteada)
   tamanhoP = palavraSorteada.length;
   img2.style.display='none'
   img3.style.display='none'
@@ -154,8 +156,11 @@ bnt.addEventListener("click", (evt) => {
   receberImg(tamanhoP);
   removerClass()
   pegarfotos()
-  
+}
+bnt.addEventListener("click", (evt) => {
+  window.location.reload()
 });
-  
+window.addEventListener('load',init())
+
    
   
