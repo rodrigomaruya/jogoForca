@@ -10,7 +10,7 @@ main{
   margin: auto;
   max-width: 800px;
   min-width: 350px;
-  height: 100vh;
+  height: 100%;
   border: 1px solid;
 }
 h1{
@@ -167,6 +167,7 @@ h1{
   }
     
   footer{
+    margin-top: 40px;
     text-align: center;
     background-image: linear-gradient(to right,rgb(90, 1, 1),red);
     padding: 5px;
