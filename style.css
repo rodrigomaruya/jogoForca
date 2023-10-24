@@ -67,7 +67,8 @@ h1{
   /* background-color: red; */
 }
 #img1{
-  width: 200px;
+  margin: auto;
+  width: 130px;
   height:400px;
   display: none;
 }

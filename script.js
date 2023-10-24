@@ -81,8 +81,8 @@ const removerClass=()=>{
       
 
 const pegarfotos=()=>{
-  let i= Math.floor(Math.random()*3)
-  img1.setAttribute('src','imagens/playboy'+i+'.jpg')
+  let i= 7
+  img1.setAttribute('src','imagens/playboy'+i+'.png')
   img1.style.display='block'
 }
 const final=()=>{
